@@ -1,27 +1,78 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title>Jake's Playlist</title>
-    </head>
-    <script language= javascript>
-        function regulate()
-        {
-            if(document.pass.pass.value == "1") {
-                window.location = "correct.html";
-            }
-            else
-            {
-                window.location = "incorrect.html";
-            }
-        }
-    </script>
-    <body>
-        <form name = pass>
-            <input type = password name = pass>
-            <input type = button value = "enter passwd" onClick = "javascript:regulate();">
-        </form>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h1>About Me</h1>
+                <p class="lead">Welcome to my portfolio! I am a passionate developer with experience in various technologies.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>A brief description of your first project. What was the goal? What technologies did you use?</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>A brief description of your second project. What problem did it solve? What was your role?</p>
+                </div>
+                 <div class="project">
+                    <h3>Project 3</h3>
+                    <p>A brief description of your third project. What are you most proud of about this project?</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>I'm currently open to new opportunities. You can reach me at <a href="mailto:myemail@example.com">myemail@example.com</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
